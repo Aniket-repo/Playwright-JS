@@ -1,1 +1,23 @@
+// Using the VS code for the better compatability of the code.
 
+/*
+	Variables - A variable is a named container used to store data values in a program. It allows you to save information and use or change it   later while the program runs.
+
+	JavaScript provides three main ways to declare variables:
+
+	  1. var - function-scoped, can be redeclared and updated.
+	  2. let - block-scoped, can be updated but not redeclared.
+	  3. const - block-scoped, cannot be updated or redeclared.
+*/
+
+var x = 10;
+var x = 20; // allowed
+
+
+let count = 1;
+count = 2;   // OK
+// let count = 3; // ❌ error (same block)
+
+
+const pi = 3.14;
+// pi = 4; // ❌ error
