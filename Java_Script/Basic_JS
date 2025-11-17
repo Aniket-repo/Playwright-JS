@@ -21,3 +21,70 @@ count = 2;   // OK
 
 const pi = 3.14;
 // pi = 4; // ❌ error
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Data types in JS - 2 types - Primitive & Non Primitive
+/*
+	Primitive Data Types (7)
+		1. string - text values
+		2. number – integers & decimals
+		3. bigint – very large integers
+		4. boolean – true/false
+		5. undefined – a variable declared but not assigned
+		6. null – intentional empty value
+		7. symbol – unique, immutable identifier
+
+	Non-Primitive Data Type (1)
+		1. object – key-value pairs, arrays, functions, dates, etc.
+*/
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------//
+
+
+// Operators in JS - 
+/*
+	1. Arithmetic Operators - 
+		+	Addition
+		-	Subtraction
+		*	Multiplication
+		/	Division
+		%	Modulus (remainder)
+		**	Exponentiation
+		++	Increment
+		--	Decrement
+*/
+
+let a = 10;
+let b = 3;
+
+console.log(a + b); // 13 (addition)
+console.log(a - b); // 7 (subtraction)
+console.log(a * b); // 30 (multiplication)
+console.log(a / b); // 3.33 (division)
+console.log(a % b); // 1 (remainder)
+console.log(a ** b); // 1000 (10^3)
+console.log(++a); // 11 (pre-increment)
+console.log(--b); // 2 (pre-decrement)
+
+/*
+	2. Assignment Operators - 
+		=	Assign
+		+=	Add and assign
+		-=	Subtract and assign
+		*=	Multiply and assign
+		/=	Divide and assign
+		%=	Modulus and assign
+		**=	Exponent and assign
+*/
+
+let x = 10; 
+x += 5;       // x = x + 5 → 15
+x -= 3;       // x = x - 3 → 12
+x *= 2;       // x = x * 2 → 24
+x /= 4;       // x = x / 4 → 6
+x %= 4;       // x = x % 4 → 2
+x **= 3;      // x = x ** 3 → 8
