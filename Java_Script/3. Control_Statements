@@ -1,1 +1,115 @@
+// Conditional Statements
 
+/*
+    1. If Else - 
+        if (condition) {
+            // Code block to execute if the condition is TRUE
+        } else {
+            // Code block to execute if the condition is FALSE
+        }
+*/
+
+let isRaining = false;
+if (isRaining) {
+    console.log("Take an umbrella.");
+} else {
+    console.log("Leave the umbrella at home.");
+}
+// Output: Leave the umbrella at home.
+
+/*
+    2. If Else ladder - 
+        if (condition1) {
+            // Code block if condition1 is TRUE
+        } else if (condition2) {
+            // Code block if condition1 is FALSE AND condition2 is TRUE
+        } else if (condition3) {
+            // Code block if condition1 and condition2 are FALSE AND condition3 is TRUE
+        } else {
+            // Code block if ALL preceding conditions are FALSE
+        }
+*/
+
+let a = 78;
+let b = 55;
+let c = 66;
+if (a > b && a > c) {
+    console.log("a is greater");
+} else if (b > a && b > c) {
+    console.log("b is greater");
+} else {
+    console.log("c is greater");
+}
+// Output: a is greater
+
+/*
+    3. nested If Else -
+        if (condition1) {
+            // Code to execute if condition1 is true
+            if (condition2) {
+                // Code to execute if both condition1 and condition2 are true
+            } else {
+                // Code to execute if condition1 is true but condition2 is false
+            }
+        } else {
+            // Code to execute if condition1 is false
+        }
+*/
+
+let a = 78;
+let b = 505;
+let c = 66;
+if (a > b || c > b) {
+    if (a > c) {
+        console.log("a is greater");
+    } else {
+        console.log("c is greater");
+    }
+} else {
+    console.log("b is greater");
+// Output: b is greater
+
+/*
+    4. Switch Case - 
+        switch (expression) {
+            case value1:
+                // Code to be executed if expression === value1
+                break;
+            case value2:
+                // Code to be executed if expression === value2
+                break;
+                // ... any number of case statements
+            default:
+                // Code to be executed if none of the cases match
+        }
+*/
+
+let dayNumber = 3;
+let dayName;
+switch (dayNumber) {
+    case 1:
+        dayName = "Sunday";
+        break;
+    case 2:
+        dayName = "Monday";
+        break;
+    case 3:
+        dayName = "Tuesday";
+        break;
+    case 4:
+        dayName = "Wednesday";
+        break;
+    case 5:
+        dayName = "Thursday";
+        break;
+    case 6:
+        dayName = "Friday";
+        break;
+    case 7:
+        dayName = "Saturday";
+        break;
+    default:
+        dayName = "Invalid day number";
+    }
+console.log("The day is: " + dayName);
+// Output: The day is: Tuesday
