@@ -1,2 +1,2 @@
-# Playwright-JS
-Here I am adding the full course of the Playwright Automation using JS.
+# Java Script
+Here I am adding the Java script notes which is required while working on Playwright Automation.
