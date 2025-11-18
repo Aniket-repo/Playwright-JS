@@ -1,7 +1,7 @@
 // Using the VS code for the better compatability of the code.
 
 /*
-	Variables - A variable is a named container used to store data values in a program. It allows you to save information and use or change it   later while the program runs.
+	Variables - A variable is a named container used to store data values in a program. It allows you to save information and use or change it later while the program runs.
 
 	JavaScript provides three main ways to declare variables:
 
