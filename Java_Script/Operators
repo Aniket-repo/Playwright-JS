@@ -42,3 +42,123 @@ x *= 2;       // x = x * 2 → 24
 x /= 4;       // x = x / 4 → 6
 x %= 4;       // x = x % 4 → 2
 x **= 3;      // x = x ** 3 → 8
+
+/*
+	3. Comparison (Relational) Operators
+		==	Equal (loose)
+		===	Strict equal (checks type + value)
+		!=	Not equal
+		!==	Strict not equal
+		>	Greater than
+		<	Less than
+		>=	Greater or equal
+		<=	Less or equal
+*/
+
+console.log(5 == "5");  // true (value same)
+console.log(5 === "5"); // false (type different)
+console.log(5 != 4);    // true
+console.log(5 !== "5"); // true (type different)
+console.log(10 > 5);    // true
+console.log(10 < 5);    // false
+console.log(10 >= 10);  // true
+console.log(8 <= 9);    // true
+
+/*
+	4. Logical Operators - 
+		&&	Logical AND
+		||  Logical OR
+		!	Logical NOT
+*/
+
+console.log(true && true);   // true
+console.log(true && false);  // false
+console.log(5 > 3 && 2 > 1); // true
+
+console.log(true || false);   // true
+console.log(false || false);  // false
+console.log(5 > 10 || 10 > 3); // true
+
+console.log(!true);  // false
+console.log(!false); // true
+
+/*
+	5. Ternary Operator - The ternary operator is a short form of if–else that lets you write conditional logic in one line.
+		Syntex = "condition ? expressionIfTrue : expressionIfFalse"
+
+		If condition is true → returns expressionIfTrue
+		If condition is false → returns expressionIfFalse
+*/
+Example using if-else - 
+let age = 20;
+let result;
+
+if (age >= 18) {
+  result = "Adult";
+} else {
+  result = "Minor";
+}
+
+Example using Ternary operator - 
+let age = 20;
+let result = age >= 18 ? "Adult" : "Minor";
+console.log(result); // Adult
+
+Example 2: Check if user is logged in
+let isLoggedIn = false;
+let message = isLoggedIn ? "Welcome back!" : "Please log in";
+console.log(message); // Please log in
+
+Example 4: Nested Ternary (multiple conditions)
+⚠️ Use only when small; otherwise if–else is better.
+let score = 85;
+let grade =
+  score >= 90 ? "A" :
+  score >= 80 ? "B" :
+  score >= 70 ? "C" :
+  "D";
+console.log(grade); // B
+
+Example 5: Using Ternary inside a template literal
+let isMember = !true;
+console.log(`Price: ${isMember ? "₹100" : "₹150"}`);           // Here Print statement is breaked and ternary is combined in same line
+
+/*
+	6. Type Operators - 
+		typeof		- Returns data type
+		instanceof	- Checks if object belongs to class
+		new			- Creates instance of an object
+		delete		- Removes property from object
+		in			- Checks if property exists in object
+*/
+
+console.log(typeof 123);     // "number"
+console.log(typeof "hello"); // "string"
+
+
+let date = new Date();
+console.log(date instanceof Date); // true
+
+
+let obj = new Object();
+
+
+let person = { name: "John", age: 20 };
+delete person.age;
+console.log(person); // { name: "John" }
+
+
+console.log("name" in person); // true
+
+/*
+	7. String Operators
+		+ 		- joins two strings
+		+= 		- appends string
+*/
+
+console.log("Hello " + "World"); // Hello World
+
+
+let msg = "Hello";
+msg += " JS!";
+console.log(msg); // Hello JS!
